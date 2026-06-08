@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Program</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th, td{
+            white-space: nowrap;
+        }
+        th {
+            background-color: #782f40;
+            color:white;
+        }
+        tr:nth-child(even) {
+            background-color: #f5efe0;
+        }
+        tr:hover {
+            background-color: #e8d8b8
+        }
+    </style>
+</head>
+<body>
+   <h1> Our Loyalty Program</h1> 
+   <p> Join our loyalty program and earn points with every purchase! Redeem your points for exciting rewards and special discounts. </p>
+   <ul>
+       <li> Earn points with every purchase</li>
+       <li> Redeem points for <strong>exciting rewards</strong></li>
+       <li> Get special discounts on your <strong>birthday month</strong></li>
+    <h2>Sign Up Today!</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required> 
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#terms">terms and conditions</a></label><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <h2>Rewards Tier</h2>
+    
+    <table>
+        <caption> Points Required and Member Benefits</caption>
+
+        <thead>
+            <tr>
+                <th colspan="3">Loyalty Program Tiers</th>
+            </tr>
+            <tr>
+                <th>Tier</th>
+                <th>Points Required</th>
+                <th>Benefits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bronze</td>
+                <td>0-499</td>
+                <td>5% off on all orders</td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td>500-999</td>
+                <td>10% off on all orders + Free side dish on your birthday</td>
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td>1000+</td>
+                <td>15% off on all orders + Free dessert on your birthday + Exclusive access to new menu items</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Why FSU location?</h2>
+    <p>Come find out why we decided to set up here!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/g7QuZ6bN0Vs?si=-3odNNEljEjZx2jO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </ul>
+</body>
+</html>
